@@ -1,0 +1,31 @@
+GET http://localhost:3000/Libros HTTP/1.1
+
+###
+
+GET http://localhost:3000/Libros/2 HTTP/1.1
+
+###
+
+POST http://localhost:3000/Libros HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"La historia de SUMO",
+    "author":"Roberto Pettinato",
+    "year":"2007"
+}
+
+###
+
+PUT http://localhost:3000/Libros/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Mitomanías Argentinas",
+    "author":"Alejandro Grimson",
+    "year":"2012"
+}
+
+###
+
+DELETE http://localhost:3000/Libros/4 HTTP/1.1
